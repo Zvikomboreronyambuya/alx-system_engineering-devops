@@ -1,2 +1,2 @@
-0 string SCHOOL	
-file -m -C school.magic
+#!/bin/bash
+magic_content='0 string SCHOOL'
