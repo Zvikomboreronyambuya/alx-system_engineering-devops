@@ -21,4 +21,4 @@ printf %s "server {
     index  index.html index.htm;
 }" > /etc/nginx/sites-available/default
 
-service nginx restart
+kill -s HUP $(cat /var/run/nginx.pid)
