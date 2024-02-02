@@ -29,7 +29,7 @@ defaults
 
 frontend www-https
 	bind *:80
-	bind *:443 ssl crt /etc/haproxy/cert/www.owennyambuya.tech.pem
+	bind *:443 ssl crt /etc/haproxy/cert/www.owennyambuya.tech/fullchain.pem
 	reqadd X-Forwarded-Proto:\ https
 	mode http
 	default_backend www-backend
